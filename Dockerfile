@@ -4,9 +4,12 @@ MAINTAINER caktux and Jean-Christophe Fillion-Robin "jchris.fillionr@kitware.com
 RUN apk add --no-cache build-base && \
     gem install travis && \
     apk del build-base
+
 RUN apk add --no-cache git
-RUN mkdir project
-WORKDIR project
+
+RUN mkdir /project
+
+WORKDIR /project
 ENTRYPOINT ["travis"]
 
 # Build-time metadata as defined at http://label-schema.org
