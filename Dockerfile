@@ -2,15 +2,18 @@ FROM ruby:alpine
 MAINTAINER caktux and Jean-Christophe Fillion-Robin "jchris.fillionr@kitware.com"
 
 RUN apk add --no-cache build-base && \
+    apk add --no-cache git && \
+    apk add --no-cache sudo && \
     gem install travis && \
     apk del build-base
-
-RUN apk add --no-cache git
 
 RUN mkdir /project
 
 WORKDIR /project
-ENTRYPOINT ["travis"]
+
+COPY imagefiles/entrypoint.sh /usr/share/
+
+ENTRYPOINT ["/usr/share/entrypoint.sh", "travis"]
 
 # Build-time metadata as defined at http://label-schema.org
 ARG BUILD_DATE
