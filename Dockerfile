@@ -11,6 +11,8 @@ RUN mkdir /project
 
 WORKDIR /project
 
+ENV TRAVIS_CONFIG_PATH /travis
+
 COPY imagefiles/entrypoint.sh /usr/share/
 
 ENTRYPOINT ["/usr/share/entrypoint.sh", "travis"]

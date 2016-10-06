@@ -14,6 +14,7 @@ fi
 #
 tty -s && TTY_ARGS=-ti || TTY_ARGS=
 docker run $TTY_ARGS --rm \
+    -v ~/.travis:/travis \
     -v $PWD:/project \
     $USER_IDS \
     $FINAL_IMAGE "$@"

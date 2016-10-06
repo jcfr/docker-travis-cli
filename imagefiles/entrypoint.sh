@@ -17,6 +17,8 @@ if [[ -n $BUILDER_UID ]] && [[ -n $BUILDER_GID ]]; then
   cp -r /root /home/$BUILDER_USER
   chown -R $BUILDER_USER:$BUILDER_GROUP  /home/$BUILDER_USER
 
+  chown -R $BUILDER_USER:$BUILDER_GROUP  /travis
+
   export HOME=/home/${BUILDER_USER}
 
   # Run the command as the specified user/group.
