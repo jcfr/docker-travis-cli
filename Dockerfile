@@ -8,7 +8,6 @@ RUN apk add --no-cache build-base && \
 RUN apk add --no-cache git
 RUN mkdir project
 WORKDIR project
-VOLUME ["/project"]
 ENTRYPOINT ["travis"]
 
 # Build-time metadata as defined at http://label-schema.org
