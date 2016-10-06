@@ -1,5 +1,6 @@
 FROM ruby:alpine
-MAINTAINER caktux
+MAINTAINER caktux and Jean-Christophe Fillion-Robin "jchris.fillionr@kitware.com"
+
 RUN apk add --no-cache build-base && \
     gem install travis && \
     gem install travis-lint && \

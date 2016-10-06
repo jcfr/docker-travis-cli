@@ -22,3 +22,19 @@ docker run --rm -it -v ~/project:/project travis-cli setup pypi
 ```shell
 docker run --rm -v ~/project:/project --entrypoint=travis-lint travis-cli /project/.travis.yml
 ```
+
+## Maintenance
+
+To rebuild the image:
+
+```shell
+git clone git://github.com/caktux/travis-cli
+make build
+```
+
+To publish the image::
+
+```shell
+docker login -u <user> -p <password>
+make push
+```
