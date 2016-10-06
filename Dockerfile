@@ -3,7 +3,6 @@ MAINTAINER caktux and Jean-Christophe Fillion-Robin "jchris.fillionr@kitware.com
 
 RUN apk add --no-cache build-base && \
     gem install travis && \
-    gem install travis-lint && \
     apk del build-base
 RUN apk add --no-cache git
 RUN mkdir project

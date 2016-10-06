@@ -18,9 +18,9 @@ docker run --rm travis-cli encrypt SECRET=123 -r org/repo
 docker run --rm -it -v ~/project:/project travis-cli setup pypi
 ```
 
-## Validating your `.travis.yml` with travis-lint
+## Validating your `.travis.yml`
 ```shell
-docker run --rm -v ~/project:/project --entrypoint=travis-lint travis-cli /project/.travis.yml
+docker run --rm -v ~/project:/project travis-cli lint /project/.travis.yml
 ```
 
 ## Maintenance
