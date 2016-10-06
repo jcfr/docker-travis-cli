@@ -2,6 +2,8 @@
 
 Dockerized version of [Travis Command Line Client](https://github.com/travis-ci/travis.rb)
 
+[![](https://images.microbadger.com/badges/version/caktux/travis-cli.svg)](https://microbadger.com/images/caktux/travis-cli "Get your own version badge on microbadger.com")
+
 ## Installation
 
 This image does not need to be run manually. Instead, there is a helper script
