@@ -100,5 +100,9 @@ make push
 
 ---
 
-Credits go to [sdt/docker-raspberry-pi-cross-compiler](https://github.com/sdt/docker-raspberry-pi-cross-compiler), who invented the base of the dockerized script.
+Credits go to:
+
+* [caktux](https://github.com/caktux) who created the original version of this project.
+
+* [sdt/docker-raspberry-pi-cross-compiler](https://github.com/sdt/docker-raspberry-pi-cross-compiler), who invented the base of the dockerized script.
 
