@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FINAL_IMAGE=caktux/travis-cli
+FINAL_IMAGE=jcfr/travis-cli
 
 #
 # If we are not running via boot2docker

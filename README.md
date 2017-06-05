@@ -2,7 +2,7 @@
 
 Dockerized version of [Travis Command Line Client](https://github.com/travis-ci/travis.rb)
 
-[![](https://images.microbadger.com/badges/version/caktux/travis-cli.svg)](https://microbadger.com/images/caktux/travis-cli "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/jcfr/travis-cli.svg)](https://microbadger.com/images/jcfr/travis-cli "Get your own version badge on microbadger.com")
 
 ## Installation
 
@@ -12,7 +12,7 @@ to execute it.
 To install the helper script, copy the script `travis-cli` in your `PATH`:
 
 ```shell
-curl https://raw.githubusercontent.com/caktux/travis-cli/master/travis-cli.sh \
+curl https://raw.githubusercontent.com/jcfr/docker-travis-cli/master/travis-cli.sh \
   -o ~/bin/travis-cli && \
 chmod +x ~/bin/travis-cli
 ```
@@ -87,7 +87,7 @@ run `/usr/local/bundle/bin/travis help COMMAND` for more infos
 To rebuild the image:
 
 ```shell
-git clone git://github.com/caktux/travis-cli
+git clone git://github.com/jcfr/docker-travis-cli
 make build
 ```
 

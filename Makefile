@@ -6,7 +6,7 @@
 DOCKER = docker
 
 # Docker organization to pull the images from
-ORG = caktux
+ORG = jcfr
 
 # Name of image
 IMAGE = travis-cli
